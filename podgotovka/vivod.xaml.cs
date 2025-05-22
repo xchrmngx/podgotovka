@@ -35,7 +35,22 @@ namespace podgotovka
 
         private void listbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var partner = db.partners.FirstOrDefault(x => x.id == (int)listbox.SelectedValue);
+            partnerid.id = partner.id;
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (listbox.SelectedValue == null)
+            {
+                MessageBox.Show("выбери");
+            }
+            else
+            {
+                test window = new test();
+                window.Show();
+                this.Close();
+            }
         }
     }
 }

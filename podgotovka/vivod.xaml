@@ -38,5 +38,6 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Button Click="Button_Click" Content="назад" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,350,0,0" Width="100" Height="30"/>
+        <Button Click="Button_Click_1" Content="test" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="300,350,0,0" Width="100" Height="30"/>
     </Grid>
 </Window>
